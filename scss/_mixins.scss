@@ -1,0 +1,48 @@
+@mixin flexible () {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin button() {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2rem;
+    color: #2F3035;
+    font-family: "Roboto";
+    background: #FFD300;
+    box-shadow: 0px 1px 1px rgba(47, 48, 53, 0.1), 0px 2px 4px rgba(47, 48, 53, 0.1);
+    border-radius: 4.8rem;
+    -webkit-border-radius: 4.8rem;
+    -moz-border-radius: 4.8rem;
+    -ms-border-radius: 4.8rem;
+    -o-border-radius: 4.8rem;
+    padding: 1.4rem 3.2rem;
+}
+
+@mixin link(){
+    text-decoration: none;
+    color: black;
+}
+
+@mixin buttonTrans(){
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2rem;
+    color: #2F3035;
+    font-family: "Roboto";
+    background: transparent;
+    border-radius: 4.8rem;
+    -webkit-border-radius: 4.8rem;
+    -moz-border-radius: 4.8rem;
+    -ms-border-radius: 4.8rem;
+    -o-border-radius: 4.8rem;
+    padding: 1.4rem 3.2rem;
+    border: 1px solid #FFFFFF;
+}
+
+@mixin paragraph(){
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: #86899B;
+}
