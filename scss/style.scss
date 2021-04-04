@@ -30,6 +30,13 @@ header{
         & p{
             color: rgba(255, 255, 255, 1);
             font-size: 1.8rem;
+
+            & > a{
+                -webkit-text-decoration-line: underline;
+                        text-decoration-line: underline;
+                -moz-text-decoration-line: underline;
+                color: inherit;
+}
         }
     }
     
@@ -107,7 +114,7 @@ header{
         -moz-border-radius: 1.6rem;
         -ms-border-radius: 1.6rem;
         -o-border-radius: 1.6rem;
-        padding: 1.2rem;
+        padding: 1.2rem 1.2rem 2.5rem 1.2rem;
         margin: 0px auto;
         width: 720px;
 
@@ -253,6 +260,7 @@ header{
         @include flexible();
         flex-direction: column;
         padding-top: 10rem;
+        padding-bottom: 10rem;
 
         & > .quote__image{
             & img{
@@ -289,4 +297,129 @@ header{
         }
     }
 
+    & > .grid-features{
+        @include flexible();
+        flex-direction: column;
+        padding: 10rem 0;
+    
+
+        & > .grid-features__list{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 8rem 3.2rem;
+
+            & .grid-features__item:nth-child(1){
+                & span{
+                    & img{
+                        width: auto;
+                    }
+                }
+            }
+
+            & .grid-features__item{
+                @include flexible();
+                align-items: flex-start;
+
+                & span{
+                    & img{
+                        width: 40px;
+                    }
+                }
+
+                & div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items:flex-start;
+                    margin-left: 3.2rem;
+                    color: #fff;
+
+                    & h3{
+                        font-size: $h3Size;
+                        margin: 0;
+                    }
+
+                    & p{
+                        font-weight: normal;
+                        font-size: 2rem;
+                        line-height: 2.4rem;
+                        color: rgba(255, 255, 255, 0.75);
+                    }
+                }
+            }
+        }
+
+        & > .grid-features__CTA{
+            @include flexible();
+            flex-direction: row;
+            margin-top: 10rem;
+            
+            & > .grid-features__main{
+                color: rgba(255, 255, 255, 1);
+
+                & > p{
+                    font-weight: bold;
+                    font-size: 1.6rem;
+                    line-height: 1.6rem;
+                    letter-spacing: 0.02em;
+                    text-transform: uppercase;
+                    color: rgba(255, 255, 255, 0.75);
+                }
+
+                & > h2{
+                    font-size: $h2Size;
+                    width: 436px;
+                }
+            }
+
+            & > .grid-features__buttons{
+                @include flexible();
+                flex-direction: row;
+    
+                & button:nth-child(1){
+                    @include buttonTrans();
+                    padding: 1.4rem 3.2rem;
+    
+                    & a{
+                        @include link();
+                        color: white;
+                    }
+                }
+    
+                & button:nth-child(2){
+                    @include button();
+                    margin-left: 3.2rem;
+                    & a{
+                        @include link();
+                    }
+                }
+            }
+        }
+    }
+
+    & > .footer{
+        @include flexible();
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 4rem 0;
+
+        & > p{
+            font-weight: normal;
+            font-size: 1.8rem;
+            line-height: 2rem;
+            color: #86899B;
+
+            & > a{
+                -webkit-text-decoration-line: underline;
+                text-decoration-line: underline;
+                color: inherit;
+            }
+        }
+    }
+    
 }
+
+main > section:nth-child(3){
+    background: #2F3035;
+}
+

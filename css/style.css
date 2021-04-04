@@ -386,6 +386,12 @@ header {
   font-size: 1.8rem;
 }
 
+.wrapper .top-header p > a {
+  text-decoration-line: underline;
+  -moz-text-decoration-line: underline;
+  color: inherit;
+}
+
 .wrapper .title-header {
   display: flex;
   justify-content: center;
@@ -496,7 +502,7 @@ header {
   -moz-border-radius: 1.6rem;
   -ms-border-radius: 1.6rem;
   -o-border-radius: 1.6rem;
-  padding: 1.2rem;
+  padding: 1.2rem 1.2rem 2.5rem 1.2rem;
   margin: 0px auto;
   width: 720px;
 }
@@ -663,6 +669,7 @@ header {
   align-items: center;
   flex-direction: column;
   padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .wrapper > .quote > .quote__image img {
@@ -708,5 +715,159 @@ header {
   -o-border-radius: 4.8rem;
   padding: 1.4rem 3.2rem;
   border: none;
+}
+
+.wrapper > .grid-features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10rem 0;
+}
+
+.wrapper > .grid-features > .grid-features__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 8rem 3.2rem;
+}
+
+.wrapper > .grid-features > .grid-features__list .grid-features__item:nth-child(1) span img {
+  width: auto;
+}
+
+.wrapper > .grid-features > .grid-features__list .grid-features__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+}
+
+.wrapper > .grid-features > .grid-features__list .grid-features__item span img {
+  width: 40px;
+}
+
+.wrapper > .grid-features > .grid-features__list .grid-features__item div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 3.2rem;
+  color: #fff;
+}
+
+.wrapper > .grid-features > .grid-features__list .grid-features__item div h3 {
+  font-size: 2.4rem;
+  margin: 0;
+}
+
+.wrapper > .grid-features > .grid-features__list .grid-features__item div p {
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.wrapper > .grid-features > .grid-features__CTA {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 10rem;
+}
+
+.wrapper > .grid-features > .grid-features__CTA > .grid-features__main {
+  color: white;
+}
+
+.wrapper > .grid-features > .grid-features__CTA > .grid-features__main > p {
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.wrapper > .grid-features > .grid-features__CTA > .grid-features__main > h2 {
+  font-size: 3.2rem;
+  width: 436px;
+}
+
+.wrapper > .grid-features > .grid-features__CTA > .grid-features__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.wrapper > .grid-features > .grid-features__CTA > .grid-features__buttons button:nth-child(1) {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2rem;
+  color: #2F3035;
+  font-family: "Roboto";
+  background: transparent;
+  border-radius: 4.8rem;
+  -webkit-border-radius: 4.8rem;
+  -moz-border-radius: 4.8rem;
+  -ms-border-radius: 4.8rem;
+  -o-border-radius: 4.8rem;
+  padding: 1.4rem 3.2rem;
+  border: 1px solid #FFFFFF;
+  padding: 1.4rem 3.2rem;
+}
+
+.wrapper > .grid-features > .grid-features__CTA > .grid-features__buttons button:nth-child(1) a {
+  text-decoration: none;
+  color: black;
+  color: white;
+}
+
+.wrapper > .grid-features > .grid-features__CTA > .grid-features__buttons button:nth-child(2) {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2rem;
+  color: #2F3035;
+  font-family: "Roboto";
+  background: #FFD300;
+  box-shadow: 0px 1px 1px rgba(47, 48, 53, 0.1), 0px 2px 4px rgba(47, 48, 53, 0.1);
+  border-radius: 4.8rem;
+  -webkit-border-radius: 4.8rem;
+  -moz-border-radius: 4.8rem;
+  -ms-border-radius: 4.8rem;
+  -o-border-radius: 4.8rem;
+  padding: 1.4rem 3.2rem;
+  border: none;
+  margin-left: 3.2rem;
+}
+
+.wrapper > .grid-features > .grid-features__CTA > .grid-features__buttons button:nth-child(2) a {
+  text-decoration: none;
+  color: black;
+}
+
+.wrapper > .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4rem 0;
+}
+
+.wrapper > .footer > p {
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  color: #86899B;
+}
+
+.wrapper > .footer > p > a {
+  text-decoration-line: underline;
+  color: inherit;
+}
+
+main > section:nth-child(3) {
+  background: #2F3035;
 }
 /*# sourceMappingURL=style.css.map */
